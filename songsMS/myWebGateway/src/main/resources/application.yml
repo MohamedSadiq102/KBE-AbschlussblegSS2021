@@ -19,6 +19,13 @@ spring:
             - name: SongPredicate
           filters:
             - SongFilter
+
+        - id: songsPicture
+          uri: http://localhost:9099
+          predicates:
+            - Method=GET
+            - Path=/image/**
+
 eureka:
   client:
     register-with-eureka: true
