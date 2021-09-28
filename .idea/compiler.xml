@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eurekaService" />
+        <module name="songPicMS" />
+        <module name="myWebGateway" />
+        <module name="mySongListMS" />
+        <module name="myUserMS" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="myUserMs" target="11" />
+      <module name="userMS" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eurekaService" options="-parameters" />
+      <module name="mySongListMS" options="-parameters" />
+      <module name="myUserMS" options="-parameters" />
+      <module name="myUserMs" options="-parameters" />
+      <module name="myWebGateway" options="-parameters" />
+      <module name="songPicMS" options="-parameters" />
+      <module name="userMS" options="-parameters" />
+    </option>
+  </component>
+</project>

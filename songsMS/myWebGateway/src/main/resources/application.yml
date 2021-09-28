@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-auth-service
+          uri: http://localhost:9097
+          predicates:
+            - Method=POST
+            - Path=/auth
+          filters:
+            - SessionFilter
+
+        - id: songlist-song-service
+          uri: http://localhost:9096
+          predicates:
+            - Path=/songs/**,/songLists/**
+            - name: SongPredicate
+          filters:
+            - SongFilter
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8666/eureka/
+  instance:
+    hostname: localhost
