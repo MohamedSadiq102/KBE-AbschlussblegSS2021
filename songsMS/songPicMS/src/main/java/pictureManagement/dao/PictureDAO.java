@@ -9,11 +9,11 @@ import java.io.File;
 import java.io.IOException;
 
 @Repository
-public class ImageDAO implements pictureDAOInterface {
+public class PictureDAO implements pictureDAOInterface {
 
     private final String path;
 
-    public ImageDAO(@Value("/Users/mohamedsadiqfiware.org/Workspace/Abschlussbeleg/FinalBeleg/songsMS/songPicMS/src/main/resources/")String path) {
+    public PictureDAO(@Value("/Users/mohamedsadiqfiware.org/Workspace/Abschlussbeleg/FinalBeleg/songsMS/songPicMS/src/main/resources/")String path) {
         this.path = path;
     }
 

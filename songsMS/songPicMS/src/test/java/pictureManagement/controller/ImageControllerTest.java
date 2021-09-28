@@ -23,13 +23,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 class ImageControllerTest {
 
-    private ImageController imageController;
+    private PictureController imageController;
     private pictureDAOInterface mockedDAO = mock(pictureDAOInterface.class);
     private MockMvc mockMvc;
 
     @BeforeEach
     void initialise() {
-        imageController = new ImageController(mockedDAO);
+        imageController = new PictureController(mockedDAO);
         mockMvc = MockMvcBuilders.standaloneSetup(imageController).build();
     }
 

@@ -15,13 +15,13 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 class ImageDAOTest {
 
-    private ImageDAO imageDAO;
+    private PictureDAO imageDAO;
 
     @BeforeEach
     void setUp() {
         String path = "src/test/resources/";
         File file = new File(path);
-        imageDAO = new ImageDAO(file.getAbsolutePath() + "/");
+        imageDAO = new PictureDAO(file.getAbsolutePath() + "/");
     }
 
     @Test

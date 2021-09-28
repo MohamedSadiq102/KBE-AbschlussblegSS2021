@@ -12,12 +12,12 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/image")
-public class ImageController implements pictureControllerInterface {
+public class PictureController implements pictureControllerInterface {
 
     @Autowired
     private pictureDAOInterface imageDAO;
 
-    public ImageController(pictureDAOInterface imageDAO) {
+    public PictureController(pictureDAOInterface imageDAO) {
         this.imageDAO = imageDAO;
     }
 
