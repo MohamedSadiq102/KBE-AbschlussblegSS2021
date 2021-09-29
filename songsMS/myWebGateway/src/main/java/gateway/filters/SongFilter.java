@@ -32,13 +32,13 @@ public class SongFilter extends AbstractGatewayFilterFactory<SongFilter.Config> 
 
         private String name;
 
-        public String getName() {
-            return this.name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
+//        public String getName() {
+//            return this.name;
+//        }
+//
+//        public void setName(String name) {
+//            this.name = name;
+//        }
     }
 
 }
