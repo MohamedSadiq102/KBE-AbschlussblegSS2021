@@ -2,10 +2,10 @@ server:
   port: 9099
 spring:
   application:
-    name: ImageMS
+    name: SongPicMS
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8666/eureka}
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
     preferIpAddress: true
