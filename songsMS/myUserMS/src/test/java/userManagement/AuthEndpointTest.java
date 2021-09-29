@@ -54,4 +54,9 @@ public class AuthEndpointTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void main() {
+        UserApp.main(new String[] {});
+    }
 }

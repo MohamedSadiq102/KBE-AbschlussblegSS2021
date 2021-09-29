@@ -3,6 +3,7 @@ package pictureManagement.dao;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import pictureManagement.SongPictureApp;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -47,5 +48,10 @@ class ImageDAOTest {
     @Test
     void loadImage_unknown_image_returns_null() {
         assertNull(imageDAO.loadImage("2.jpeg"));
+    }
+
+    @Test
+    public void main() {
+        SongPictureApp.main(new String[] {});
     }
 }

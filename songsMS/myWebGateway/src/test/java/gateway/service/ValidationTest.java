@@ -1,5 +1,6 @@
 package gateway.service;
 
+import gateway.GatewayApp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -29,5 +30,10 @@ class ValidationTest {
     @Test
     void validSession_before_any_session_added_is_invalid() {
         assertFalse(validation.validSession("token"));
+    }
+
+    @Test
+    public void main() {
+        GatewayApp.main(new String[] {});
     }
 }

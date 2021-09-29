@@ -11,6 +11,7 @@ import org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConve
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import songlistManagement.SonglistApp;
 import songlistManagement.dao.ISongDAO;
 import songlistManagement.model.Song;
 
@@ -154,5 +155,10 @@ class SongControllerTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void main() {
+        SonglistApp.main(new String[] {});
     }
 }
